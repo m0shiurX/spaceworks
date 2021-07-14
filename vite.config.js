@@ -7,12 +7,13 @@ export default {
     open: '/index.html',
     // port: 3116
   },
+  publicDir: 'media',
   build: {
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        // another: resolve(__dirname, 'another.html')
-      }
-    }
+      },
+    },
+    outDir: 'public'
   }
 }

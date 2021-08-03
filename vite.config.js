@@ -4,7 +4,7 @@ import WindiCSS from 'vite-plugin-windicss'
 export default {
   plugins: [WindiCSS()],
   server: {
-    open: '/index.html',
+    open: resolve(__dirname, 'index.html'),
     // port: 3116
   },
   publicDir: 'media',
